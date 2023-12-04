@@ -593,6 +593,7 @@ font-family: 'Raleway', sans-serif;
 
  .footer-form {
     display: flex;
+    gap: 24px;
  }
 
  .footer-form-label {
@@ -615,6 +616,7 @@ font-family: 'Raleway', sans-serif;
     line-height: 2;
     letter-spacing: 0.04em;
     margin-right: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
  }
  .footer-form-button {
     display: flex;
@@ -687,9 +689,15 @@ fill: #FFF;
     padding-right: 24px;
     padding-bottom: 24px;
     padding-left: 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     width: 24px;
     height: 24px;
@@ -707,8 +715,16 @@ fill: #FFF;
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404BBF;
-    fill: #E7E9FC;
+    fill: #ffffff;
+    background-color: #404bbf;
+    border: none;
+
 }
+
+.modal-close-btn-ikon {
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .personal-data-form {
     width: 360px;
@@ -723,7 +739,7 @@ fill: #FFF;
 }
 
 .container-form {
-    margin-bottom: 8px;
+    margin-bottom: 16px
 }
 
 .label-form {
@@ -753,7 +769,7 @@ fill: #FFF;
 }
 
 .data-form-input:focus {
-    border-color: rgba(77, 90, 229, 1); 
+    border-color: #4D5AE5;
 
 }
 
@@ -763,7 +779,7 @@ fill: #FFF;
     left: 16px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
+    fill: #4D5AE5;
 }
 
 .data-form-input:focus + .data-form-input-icon {
@@ -792,7 +808,7 @@ fill: #FFF;
 }
 
 .data-form-comment:focus {
-    border-color: rgba(77, 90, 229, 1);
+    border-color: #4D5AE5;
 
 }
 
