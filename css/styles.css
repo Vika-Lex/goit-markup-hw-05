@@ -729,4 +729,79 @@ font-family: 'Raleway', sans-serif;
 
 }
 
+.data-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+
+.data-form-own-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+
+}
+
+.data-form-checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+
+}
+
+.data-form-checkbox:checked + .data-form-checkbox-label > .data-form-own-checkbox {
+    background-color: #404BBF;
+    border-color: #404BBF;
+}
+
+.data-form-checkbox:focus + .data-form-checkbox-label > .data-form-own-checkbox {
+    outline: 2px solid cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.data-form-own-checkbox-icon {
+    fill: #f2f2fc;
+    opacity: 0;
+}
+
+.data-form-checkbox:checked + .data-form-checkbox-label > .data-form-own-checkbox-icon {
+    opacity: 1;
+}
+
+.accent-color {
+    color: #4D5AE5;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+}
+
+.data-form-submit-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin-left: 96px; 
+    border: none;
+    border-radius: 4px;
+    background-color:#4D5AE5;
+    color:#FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+
 /* ================== MODAL WINDOW ===================== */
